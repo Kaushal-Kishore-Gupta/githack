@@ -49,17 +49,18 @@ int main()
         const char *command=setter.c_str();
         system(command);
         system("git init");
-        for(int z=0;z<=(rand()%max);z++)
+        for(int z=0;z<=k;z++)
         {
             system(command1);
             system("git add .");
             system("git commit -m \"fillgit\"");
         }
         day++;
+        system("git push");
     }
     day=1;
     month++;
-    system("git push");
+    
     }
     system("timedatectl set-ntp 1");
     return 0;
