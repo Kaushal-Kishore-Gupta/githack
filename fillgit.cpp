@@ -50,7 +50,7 @@ int main()
         const char *command=setter.c_str();
         system(command);
         system("git init");
-        for(int z=0;z<=k;z++)
+        for(int z=0;z<=(rand()%max);z++)
         {
             system(command1);
             system("git add .");
