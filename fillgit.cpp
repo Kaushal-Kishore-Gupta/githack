@@ -59,6 +59,7 @@ int main()
     }
     day=1;
     month++;
+    system("git push");
     }
     system("timedatectl set-ntp 1");
     return 0;
