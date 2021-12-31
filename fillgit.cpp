@@ -39,7 +39,7 @@ int main()
     string file;
     file="echo k >>"+to_string(year)+".txt";
     const char *command1=file.c_str();//converting string to const char
-    system("export GIT_SSL_NO_VERIFY=1");
+    //system("export GIT_SSL_NO_VERIFY=1");
     system("timedatectl set-ntp 0");
     while(month<=12)
     {
@@ -57,11 +57,11 @@ int main()
             system("git commit -m \"fillgit\"");
         }
         day++;
-        system("git push");
+      
     }
     day=1;
     month++;
-    
+      system("git push");
     }
     system("timedatectl set-ntp 1");
     return 0;
